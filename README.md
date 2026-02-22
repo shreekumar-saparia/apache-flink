@@ -20,6 +20,8 @@
    .bin/start-cluster.sh
 
 5) verify this by using http://localhost:8082/
+6) Clone this repo
+7) run mvn clean and mvn install
 
 <h3>Use below commands to run class programs</h3>
 <h5>word count</h5>
