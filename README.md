@@ -20,6 +20,8 @@
    .bin/start-cluster.sh
 
 5) verify this by using http://localhost:8082/
+6) Clone this repo
+7) run mvn clean and mvn install
 
 <h3>Use below commands to run class programs</h3>
 <h5>word count</h5>
@@ -59,7 +61,7 @@ we need flink libs at classpath because we are embedding flink code as well
 java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data
 
 <h5>Tumbling Windows With Processing Time Notion</h5>
-java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data
+java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data<br>
 ./bin/flink run <jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar --processType streaming --operationType tumbling_window_processing_time_notion
 
 <h5>Produce timestamp data into the socket for Event Time Notion</h5>
@@ -70,17 +72,17 @@ java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-
 ./bin/flink run <jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar --processType streaming --operationType tumbling_window_event_time_notion
 
 <h5>Sliding Windows With Processing Time Notion</h5>
-java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data
+java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data<br>
 ./bin/flink run <jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar --processType streaming --operationType sliding_window_processing_time_notion
 
 
 <h5>Session Windows With Processing Time Notion</h5>
-java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data
+java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data<br>
 ./bin/flink run <jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar --processType streaming --operationType session_window_processing_time_notion
 
 
 <h5>Global Windows With Processing Time Notion</h5>
-java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data
+java -cp "<jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar:<flink-library-path>/flink-1.5.0/lib/*" org.main.Main --processType publish --operationType produce_data<br>
 ./bin/flink run <jar-path>/apache-flink-1.0-SNAPSHOT-jar-with-dependencies.jar --processType streaming --operationType global_window_processing_time_notion
 
 
