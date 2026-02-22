@@ -15,8 +15,8 @@
    - taskmanager.heap.mb: 1024
    - taskmanager.numberOfTaskSlots: 2
 
-4) start flink cluster. You should have 1 task manager, 2 task slots.
-   cd flink-1.5.0
+4) start flink cluster. You should have 1 task manager, 2 task slots.<br>
+   cd flink-1.5.0<br>
    .bin/start-cluster.sh
 
 5) verify this by using http://localhost:8082/
